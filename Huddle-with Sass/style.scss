@@ -1,0 +1,119 @@
+@import "https://fonts.google.com/specimen/Poppins";
+$font:    Poppins, sans-serif;
+$primary-color: hsl(257, 40%, 49%);
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $primary-color;
+  background-image: url('../images/bg-desktop.svg');
+}
+
+header {
+  width: 100%;
+  padding: 10px;
+  margin-top: 40px;
+
+    img {
+      width: 200px;
+      margin-left: 100px;
+    }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    .side-one {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+        img {
+          margin: 10px auto;
+          width: 600px;
+        }
+    }
+
+    .side-two {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      font-family: Open-sans, sans-serif;
+      color: white;
+
+      h2 {
+        padding: 10px 0px;
+        width: 50%;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 40px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        width: 80%;
+        font-weight: 499;
+        line-height: 20px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        outline: none;
+        padding: 15px 30px;
+        width: 150px;
+        color: $primary-color;
+        font-weight: 400;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+        transition-duration: 0.2s;
+      }
+
+      button:hover {
+        background-color: rgb(197, 197, 197);
+      }
+    }
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 25px;
+
+  i {
+    color: white;
+    margin: 0px 10px;
+  }
+  
+  .icon {
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 100%;
+    }
+
+    div {
+      margin-right: 50px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+}
